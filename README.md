@@ -38,8 +38,11 @@ docker-task-api/
 │   ├── day-02-docker-image-container.md
 │   ├── day-03-container-improvements.md
 │   └── day-04-multi-stage-build.md
+├── k8s/
+│   └── deployment.yaml
 └── k8s-notes/
-    └── day-01-local-cluster.md
+    ├── day-01-local-cluster.md
+    └── day-02-deployment.md
 ```
 
 ## Learning notes
@@ -54,3 +57,4 @@ docker-task-api/
 ### Kubernetes
 
 - [Kubernetes Day 1 - Local cluster setup](k8s-notes/day-01-local-cluster.md)
+- [Kubernetes Day 2 - Deploy Flask API with a Deployment](k8s-notes/day-02-deployment.md)
