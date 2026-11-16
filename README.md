@@ -1,8 +1,11 @@
-# Docker Task API
+# Docker and Kubernetes Task API
+A small Flask Task API used to revise Docker and Kubernetes through a connected, hands-on learning project.
 
-A small Flask Task API used to revise Docker concepts step by step.
+The project begins as a local Flask API, then evolves into a containerised application using Docker. It will progressively include image optimisation, networking, PostgreSQL, persistent storage, Docker Compose, registries, and CI/CD.
 
-The project starts as a simple local Flask API and gradually evolves into a containerised, multi-container application using Docker, networking, volumes, Docker Compose, registries, and CI/CD.
+The same application is also deployed and operated on Kubernetes using Minikube. The Kubernetes track will cover Deployments, Pods, ReplicaSets, Services, ConfigMaps, Secrets, health probes, persistent volumes, scaling, rolling updates, Ingress, Helm/Kustomize, and CI/CD.
+
+Each learning task builds on the previous one and is documented in the Docker and Kubernetes notes folders.
 
 ## Current status
 
@@ -14,6 +17,8 @@ The project starts as a simple local Flask API and gradually evolves into a cont
 
 ### Kubernetes
 - Day 1: Set up Minikube local cluster using Docker driver and bridge CNI.
+- Day 2: Loaded the local Docker image into Minikube and deployed the Flask Task API using a Kubernetes Deployment.
+- Day 3: Exposed the Flask API with a NodePort Service and accessed the `/health` endpoint from the browser.
 
 ## Tech stack
 
@@ -39,10 +44,12 @@ docker-task-api/
 │   ├── day-03-container-improvements.md
 │   └── day-04-multi-stage-build.md
 ├── k8s/
-│   └── deployment.yaml
+│   ├── deployment.yaml
+│   └── service.yaml
 └── k8s-notes/
     ├── day-01-local-cluster.md
-    └── day-02-deployment.md
+    ├── day-02-deployment.md
+    └── day-03-service.md
 ```
 
 ## Learning notes
@@ -58,3 +65,4 @@ docker-task-api/
 
 - [Kubernetes Day 1 - Local cluster setup](k8s-notes/day-01-local-cluster.md)
 - [Kubernetes Day 2 - Deploy Flask API with a Deployment](k8s-notes/day-02-deployment.md)
+- [Kubernetes Day 3 - Expose Flask API with a NodePort Service](k8s-notes/day-03-service.md)
