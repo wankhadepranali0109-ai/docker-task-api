@@ -14,6 +14,7 @@ Each learning task builds on the previous one and is documented in the Docker an
 - Day 2: Built a Docker image and ran the API as a container.
 - Day 3: Improved the container with `.dockerignore`, environment variables, restart policy, and Docker health check.
 - Day 4: Converted the Flask image into a multi-stage build and verified the optimised image runs successfully.
+- Day 5: Created a custom Docker bridge network and connected the Flask API container to PostgreSQL using Docker DNS.
 
 ### Kubernetes
 - Day 1: Set up Minikube local cluster using Docker driver and bridge CNI.
@@ -24,6 +25,7 @@ Each learning task builds on the previous one and is documented in the Docker an
 
 - Python
 - Flask
+- PostgreSQL
 - Docker
 - Kubernetes
 - Minikube
@@ -42,7 +44,8 @@ docker-task-api/
 │   ├── day-01-local-flask-api.md
 │   ├── day-02-docker-image-container.md
 │   ├── day-03-container-improvements.md
-│   └── day-04-multi-stage-build.md
+│   ├── day-04-multi-stage-build.md
+│   └── day-05-docker-networking.md
 ├── k8s/
 │   ├── deployment.yaml
 │   └── service.yaml
@@ -60,6 +63,7 @@ docker-task-api/
 - [Docker Day 2 - Docker image and container](docker-notes/day-02-docker-image-container.md)
 - [Docker Day 3 - Container improvements](docker-notes/day-03-container-improvements.md)
 - [Docker Day 4 - Multi-stage build and image optimisation](docker-notes/day-04-multi-stage-build.md)
+- [Docker Day 5 - Custom bridge networking with PostgreSQL](docker-notes/day-05-docker-networking.md)
 
 ### Kubernetes
 
