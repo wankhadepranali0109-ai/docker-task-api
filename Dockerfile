@@ -18,6 +18,7 @@ COPY --from=builder /install/deps /usr/local
 
 # Copy only the application file needed at runtime
 COPY app.py .
+COPY templates/ ./templates/
 
 EXPOSE 5000
 
